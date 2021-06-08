@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            LFBianchi Test Server
+        </title>
+        <link href="{% static 'layout.css' %}" rel="stylesheet"/>
+        <link href="{% static 'navbar.css' %}" rel="stylesheet"/>
+        <link href="{% static 'userbox.css' %}" rel="stylesheet"/>
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <div class="navbar" id="main-navbar">
+                <div class="navbar-inner">
+                    <div class="navbarcol1"></div>
+                    <div class="navbarcol2"></div>
+                    <div class="navbarcol3"></div>
+                </div>
+            </div>
+            <div class="mainbody" id="main-body">
+                <div class="col1">
+                    <!---- User Box start ----->
+                    <div class="userbox">
+                        <div class="userbox-title-area">
+                            <div class="userbox-title-wrapper">
+                                <strong>Available Users</strong>
+                            </div>
+                        </div>
+                        {% block users %}
+                        replace this
+                        {% endblock %}
+                    </div>
+                    <!----- User Box end ------>
+                </div>
+                <div class="col2">
+                    <!---- Posts start ----->
+                    {% block posts %}
+                        replace this
+                    {% endblock %}
+                    <!----- Posts end ------>
+                </div>
+                <div class="col3"></div>
+            </div>
+            
+        </div>
+
+    </body>
+</html>
+

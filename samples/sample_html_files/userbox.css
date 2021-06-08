@@ -1,0 +1,86 @@
+.userbox {
+    font-family: Arial, sans-serif;
+    font-size: small;
+    height: auto;
+    width: auto;
+    background-color: #dddd;
+}
+
+.userbox-title-area {
+    text-align: center;
+    margin: auto;
+    height: 30px;
+    width: 100%;
+    background-color: #dddd;
+}
+
+.userbox-title-wrapper {
+    padding: 6px;
+}
+
+.userbox-users-area {
+    width: 100%;
+    background-color: #dddd;
+}
+
+.userbox-users-wrapper {
+    padding: 6px;
+}
+
+.postbox {
+    font-family: Arial, sans-serif;
+    font-size: small;
+    height: 150px;
+    background-color: #dddd;
+    width: 100%
+}
+
+.postbox-thumbnail {
+    float:left;
+    width: 30%;
+    height: 150px;
+    overflow: hidden;
+    background-color: #dddd;
+}
+
+.postbox-thumbnail-wrapper {
+    float:left;
+    margin-top: 18px;
+    margin-left: 25px;
+}
+
+.postbox-content {
+    float: right;
+    width: 70%;
+    overflow: hidden;
+}
+
+.postbox-title-area {
+    height: 24%;
+    background-color: #dddd;
+    width: 100%
+}
+
+.postbox-title-wrapper {
+    width: 100%;
+    height:80%;
+    padding: 8px;
+}
+
+.postbox-description-area {
+    height: 58%;
+    background-color: #dddd;
+    width: 100%
+}
+
+.postbox-button-area {
+    height: 18%;
+    background-color: #dddd;
+    width: 100%
+}
+
+.postbox-button-wrapper {
+    width: 15%;
+    height: 80%;
+    float: right;
+}

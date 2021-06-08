@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block posts %}
+{% for object in object_list %}
+    <!---- Posts start ----->
+    <div class="postbox-thumbnail">
+        <div class="postbox-thumbnail-wrapper">
+            {% if object.thumb %}
+            <img class="post-thumb" src={{object.thumb}} 
+                alt="Post thumbnail" width="150" >
+            {% endif %}
+        </div>
+    </div>
+    <div class="postbox-content">
+        <div class="postbox">
+            <div class="postbox-title-area">
+                <div class="postbox-title-wrapper">
+                    {% if object.origin == 'Youtube' %}
+                    <img src="{% static 'youtube.png' %}"" alt="Twitter Icon" width="12">                    
+                    {% elif object.origin == 'Twitter' %}
+                    <img src="{% static 'twittter.png' %}"" alt="Twitter Icon" width="12">
+                    {% endif %}
+                    <strong>{{object.title}}</strong>
+                </div>
+            </div>
+            <div class="postbox-description-area">
+                <div class="postbox-description-wrapper">
+                    {{object.content}}
+                </div>
+            </div>
+            <div class="postbox-button-area">
+                <div class="postbox-button-wrapper">
+                    <form method="get" action="{{object.link}}">
+                        <button type="submit">Post</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----- Posts end ------>
+{% endfor %}
+{% endblock %}
+
+{% block users %}
+{% for object in user_list %}
+    <!---- User Box start ----->
+    <div class="userbox-users-area" id={{object.origin}}>
+        <div class="userbox-users-wrapper">
+            {{ object.username }}
+        </div>                            
+    </div>
+{% endfor %}
+{% endblock %}

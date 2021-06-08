@@ -1,0 +1,46 @@
+body  {
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    background-color: white;
+}
+
+
+/* -------------------------------mainbody--------------------------------------------------*/
+
+.mainbody {
+
+    width: 1024px;
+    height: auto;
+    margin: 10px auto 10px auto; 
+    overflow: hidden;
+    background-color:white;
+}
+
+.col1 {
+    width: 17%;
+    float:left;
+    height: auto;
+    background-color:white;
+}
+
+.col2 {
+    width: 63%;
+    float:left;
+    margin-left: 2%;
+    height: auto;
+    background-color:white;
+}
+
+.col3 {
+    width: 23%;
+    float:right;
+    height: auto;
+    background-color:white;
+}
+
