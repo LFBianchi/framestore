@@ -1,6 +1,6 @@
 # framestore
 
-This is a simple aplication that fetches data from social media accounts and stores it in an SQLite database for later use.
+This is a simple aplication that fetches data from social media accounts, stores it in an SQLite database for later use and presents it to the user using the Django template engine.
 
 # Sample Pictures
 
